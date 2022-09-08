@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="center-col">
+      <div class="edit-box">
+        <form
+          action="delete.php"
+          method="post"
+          data-confirm="Are you sure you want to submit the form?"
+        >
+          <label>
+            <h3 class="ac-title">DELETE ITEM</h3>
+
+            <input
+              type="text"
+              name="delete"
+              id="delete"
+              placeholder="Enter ID to delete item"
+              class="text-style"
+            />
+            <br />
+            <input type="submit" class="submit-ac" />
+          </label>
+        </form>
+        <form action="insert.php" method="post">
+          <label>
+            <h3 class="ac-title">INSERT ITEM</h3>
+            <input
+              type="text"
+              name="idIn"
+              id="idIn"
+              placeholder="Enter item ID"
+              class="text-style"
+            />
+            <br />
+            <input
+              type="text"
+              name="nameIn"
+              id="nameIn"
+              placeholder="Enter item name"
+              class="text-style"
+            />
+            <br />
+            <input
+              type="text"
+              name="priceIn"
+              id="priceIn"
+              placeholder="Enter item price"
+              class="text-style"
+            />
+            <br />
+
+            <select name="typeIn" id="typeIn" class="text-style">
+              <option value="food">food</option>
+              <option value="drink">drink</option>
+              <option value="dessert">dessert</option>
+              <option value="side dish">side dish</option>
+            </select>
+            <br />
+            <input type="submit" class="submit-ac" />
+          </label>
+        </form>
+        <form action="update.php" method="post">
+          <label>
+            <h3 class="ac-title">UPDATE ITEM</h3>
+            <input
+              type="text"
+              name="idIn"
+              id="idIn"
+              placeholder="Enter item ID"
+              class="text-style"
+            />
+            <br />
+            <input
+              type="text"
+              name="newIdIn"
+              id="newIdIn"
+              placeholder="Enter item new ID"
+              class="text-style"
+            />
+            <br />
+            <input
+              type="text"
+              name="nameIn"
+              id="nameIn"
+              placeholder="Enter item new name"
+              class="text-style"
+            />
+            <br />
+            <input
+              type="text"
+              name="priceIn"
+              id="priceIn"
+              placeholder="Enter item new price"
+              class="text-style"
+            />
+            <br />
+
+            <select name="typeIn" id="typeIn" class="text-style">
+              <option value="food">food</option>
+              <option value="drink">drink</option>
+              <option value="dessert">dessert</option>
+              <option value="side dish">side dish</option>
+            </select>
+            <br />
+            <input type="submit" class="submit-ac" />
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
